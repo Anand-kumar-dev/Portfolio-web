@@ -1,0 +1,161 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-family: "Bitter", sans-serif;
+    cursor:auto;
+}
+
+.wrap {
+    border: 14px solid white;
+    position: sticky;
+    top: 0;
+}
+body::selection{
+   color: white;
+   background: #000;
+
+}
+
+.firstPage {
+    width: 97vw;
+    height: auto;
+    background: #bed3e0;
+}
+
+Header {
+    border-top: 14px solid white;
+    position: fixed;
+    top: 0;
+    width: 95vw;
+    padding: 1%;
+    display: flex;
+    justify-content: space-between;
+}
+
+Header ul {
+    display: flex;
+    gap: 10px;
+
+}
+
+Header ul hr {
+    background: #000;
+    width: 0.6px;
+    height: 25px;
+    margin: 2px;
+    transform: translateY(8px);
+    opacity: 0.4;
+
+}
+
+Header :nth-child(1) img {
+    width: 50px;
+}
+
+Header :nth-child(1) li {
+    font-size: small;
+    margin-top: 3px;
+    padding-left: 10px;
+
+}
+
+Header :nth-child(2) img {
+    width: 30px;
+}
+
+Header :nth-child(2) li {
+    font-size: small;
+    margin-top: 3px;
+}
+
+Header ul li {
+    font-size: small;
+    letter-spacing: 4px;
+    padding-top: 13px;
+}
+
+main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+main img{
+    padding-top: 80px;
+    padding-right: 12%;
+    width: 300px;
+}
+.intro {
+    margin-left: 10px;
+    color: black;
+    padding: 12% 10% 7% 10%;
+    gap: 20px;
+}
+
+.intro h1 {
+    font-size: 70px;
+    font-weight: 400;
+    padding: 10px 0px 10px 0px;
+}
+
+.intro h1 span {
+
+    font-weight: 700;
+}
+.intro h1 span:hover{
+   text-decoration-line: underline;
+   transition-delay: 1s;
+}
+.intro p{
+    padding-left: 3px;
+    font-size: 1.3rem;
+    line-height: 1.5;
+    
+}
+.line{
+    padding-left: 20px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+}
+#hr2{
+  height: 250px;
+  width: 1.12px;
+  background: #000;
+}
+.secondPage{
+     max-width: 97vw;
+    height: auto;
+    background: #bed3e0;
+    padding: 3% 10% 10% 10%;
+    display: flex;
+    gap: 30%;
+    align-items: center;
+    
+}
+.secondPage h1{
+    font-size: 3rem;
+}
+.secondPage p{
+    width: auto;
+    padding-top: 2.2%;
+    font-size: 1rem;
+    line-height: 1.6;
+    font-weight: 500;
+}
+.secondPage img{
+    width: 300px;
+}
+.thirdPage{
+     max-width: 97vw;
+    height: auto;
+    background: #bed3e0;
+    padding: 3% 10% 10% 10%;
+    display: flex;
+    gap: 30%;
+    align-items: center;
+}
+.thirdPage h1{
+    font-size: 3rem;
+}
