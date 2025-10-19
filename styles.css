@@ -81,13 +81,48 @@ main{
     align-items: center;
 
 }
-main img{
-    padding-top: 80px;
-    padding-right: 12%;
-    width: 300px;
+.avaani{
+    width: Auto;
+    height: auto;
+   
+}
+.avaani img{
+    
+    margin-top: 10%;
+    margin-right: 12%;
+    width: 50%;
+    animation: bord  2s ease-out 1 forwards ;
+    animation-delay:.7s;
+}
+
+@keyframes bord {
+    0%{
+         border: 5px solid black;
+       border-radius: 50%;
+    }
+    30%{
+        padding: 4%;
+       border: 5px solid black;
+       border-radius: 50%;
+    }
+    60%{
+         padding: 4%;
+         border: 5px solid black;
+       border-radius: 50%;
+      border-bottom-left-radius: 2%;
+            border-top-right-radius: 3%
+
+    }
+    100%{
+         padding: 4%;
+         border: 5px solid black;
+       border-radius: 50%;
+      border-bottom-left-radius: 2%;
+      border-top-right-radius: 3%
+    }
 }
 .intro {
-    margin-left: 10px;
+    
     color: black;
     padding: 12% 10% 7% 10%;
     gap: 20px;
@@ -153,9 +188,45 @@ main img{
     background: #bed3e0;
     padding: 3% 10% 10% 10%;
     display: flex;
+    flex-direction: column;
     gap: 30%;
-    align-items: center;
+    
 }
 .thirdPage h1{
     font-size: 3rem;
+}
+.project{
+    padding: 5%;
+}
+.pro1{
+    display: flex;
+  
+}
+.pro1 svg{
+    width: 50%;
+    height: auto;
+    padding: 0% 15% 8% 0%;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+}
+.content h2{
+    font-weight: 320;
+    font-size: 2.6rem;
+    padding: 2.5%;
+}
+.content p{
+    line-height: 1.8;
+    padding: 2.5%;
+}
+.link a {
+    padding: 2.5%;
+}
+.fa-github{
+    padding-left: 2.5%;
+
+    width: 5rem;
+    height: auto;
+    color: black;
 }
