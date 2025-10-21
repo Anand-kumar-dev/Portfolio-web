@@ -23,3 +23,13 @@ named.addEventListener('click',(e)=>{
      named.innerHTML = anandNames[Math.floor(Math.random() * (anandNames.length - 1 + 1)) + 1]
    }, 1000);
 })
+
+
+
+const menu = document.querySelector("#menu");
+const toslide = document.querySelector("#tosilde");
+
+
+menu.addEventListener("click",()=>{
+  
+})

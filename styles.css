@@ -48,9 +48,15 @@ Header ul hr {
     opacity: 0.4;
 
 }
-
+Header :nth-child(1) { 
+    position: relative; 
+    overflow: hidden; 
+}
 Header :nth-child(1) img {
+    position: relative;
+    z-index: 10;
     width: 50px;
+    overflow: hidden;
 }
 
 Header :nth-child(1) li {
@@ -75,6 +81,36 @@ Header ul li {
     padding-top: 13px;
 }
 
+#toslide{
+    position: relative;
+    z-index: -1;
+    animation: beside 1s linear forwards;
+
+}
+@keyframes beside {
+    0%{
+        transform: translateX(-100px);
+    }
+    10%{
+        transform: translateX(1px);
+    }
+    30%{
+        transform: translateX(3px);
+    }
+    50%{
+        transform: translateX(6px);
+    }
+    70%{
+        transform: translateX(8px);
+    }
+    90%{
+        transform: translateX(8px);
+    }
+    100%{
+        transform: translateX(9px);
+    }
+    
+}
 main{
     display: flex;
     justify-content: space-between;
@@ -197,20 +233,24 @@ main{
 }
 .project{
     padding: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .pro1{
     display: flex;
-  
+   border-bottom: 2px solid black;
+   border-radius: 2%;
 }
-.pro1 svg{
-    width: 50%;
+
+.pro1 img{
+
+    width: 15%;
     height: auto;
-    padding: 0% 15% 8% 0%;
+    padding: 4% 15% 8% 0%;
 }
-.content{
-    display: flex;
-    flex-direction: column;
-}
+
 .content h2{
     font-weight: 320;
     font-size: 2.6rem;
@@ -225,8 +265,6 @@ main{
 }
 .fa-github{
     padding-left: 2.5%;
-
-    width: 5rem;
-    height: auto;
+    
     color: black;
 }
