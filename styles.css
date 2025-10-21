@@ -3,7 +3,7 @@
     margin: 0;
     list-style: none;
     font-family: "Bitter", sans-serif;
-    cursor:auto;
+    cursor: auto;
 }
 
 .wrap {
@@ -11,9 +11,10 @@
     position: sticky;
     top: 0;
 }
-body::selection{
-   color: white;
-   background: #000;
+
+body::selection {
+    color: white;
+    background: #000;
 
 }
 
@@ -48,15 +49,10 @@ Header ul hr {
     opacity: 0.4;
 
 }
-Header :nth-child(1) { 
-    position: relative; 
-    overflow: hidden; 
-}
+
 Header :nth-child(1) img {
     position: relative;
-    z-index: 10;
     width: 50px;
-    overflow: hidden;
 }
 
 Header :nth-child(1) li {
@@ -81,84 +77,118 @@ Header ul li {
     padding-top: 13px;
 }
 
-#toslide{
-    position: relative;
-    z-index: -1;
+#menu :nth-child(3) {
+    overflow: hidden;
+}
+
+#toslide {
+    z-index: 2;
     animation: beside 1s linear forwards;
 
 }
+
 @keyframes beside {
-    0%{
+    0% {
         transform: translateX(-100px);
+        opacity: 0.1;
     }
-    10%{
-        transform: translateX(1px);
+
+    10% {
+        transform: translateX(-20px);
+        opacity: 0.3;
     }
-    30%{
-        transform: translateX(3px);
+
+    30% {
+        transform: translateX(-10px);
+        opacity: 0.5;
     }
-    50%{
-        transform: translateX(6px);
+
+    50% {
+        transform: translateX(-5px);
+        opacity: 0.7;
     }
-    70%{
-        transform: translateX(8px);
+
+    70% {
+        transform: translateX(-3px);
+        opacity: 0.8;
     }
-    90%{
-        transform: translateX(8px);
+
+    90% {
+        opacity: 0.9;
+        transform: translateX(-2px);
     }
-    100%{
-        transform: translateX(9px);
+
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
     }
-    
+
 }
-main{
+
+main {
     display: flex;
     justify-content: space-between;
     align-items: center;
 
 }
-.avaani{
+
+.avaani {
     width: Auto;
     height: auto;
-   
+
 }
-.avaani img{
-    
+
+.avaani img {
+
     margin-top: 10%;
     margin-right: 12%;
     width: 50%;
-    animation: bord  2s ease-out 1 forwards ;
-    animation-delay:.7s;
+    animation: bord 2s ease-out 1 forwards;
+    animation-delay: .7s;
 }
 
 @keyframes bord {
-    0%{
-         border: 5px solid black;
-       border-radius: 50%;
+    0% {
+        border: 5px solid black;
+        border-radius: 50%;
     }
-    30%{
-        padding: 4%;
-       border: 5px solid black;
-       border-radius: 50%;
-    }
-    60%{
-         padding: 4%;
-         border: 5px solid black;
-       border-radius: 50%;
-      border-bottom-left-radius: 2%;
-            border-top-right-radius: 3%
 
+    30% {
+        padding: 4%;
+        border: 5px solid black;
+        border-radius: 50%;
     }
-    100%{
-         padding: 4%;
-         border: 5px solid black;
-       border-radius: 50%;
-      border-bottom-left-radius: 2%;
-      border-top-right-radius: 3%
+
+    60% {
+        padding: 4%;
+        border: 5px solid black;
+        border-radius: 50%;
+        border-bottom-left-radius: 2%;
+        border-top-right-radius: 3%
+    }
+
+    100% {
+        padding: 4%;
+        border: 5px solid black;
+        border-radius: 50%;
+        border-bottom-left-radius: 2%;
+        border-top-right-radius: 3%
     }
 }
+
+.common {
+    max-width: 97vw;
+    height: auto;
+    background: #bed3e0;
+    padding: 3% 10% 10% 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 30%;
+
+}
+
 .intro {
-    
+
     color: black;
     padding: 12% 10% 7% 10%;
     gap: 20px;
@@ -174,97 +204,118 @@ main{
 
     font-weight: 700;
 }
-.intro h1 span:hover{
-   text-decoration-line: underline;
-   transition-delay: 1s;
+
+.intro h1 span:hover {
+    text-decoration-line: underline;
+    transition-delay: 1s;
 }
-.intro p{
+
+.intro p {
     padding-left: 3px;
     font-size: 1.3rem;
     line-height: 1.5;
-    
+
 }
-.line{
+
+.line {
     padding-left: 20px;
     width: 500px;
     display: flex;
     justify-content: center;
 }
-#hr2{
-  height: 250px;
-  width: 1.12px;
-  background: #000;
+
+#hr2 {
+    border: none;
+    height: 250px;
+    width: 1.5px;
+    background: #000;
 }
-.secondPage{
-     max-width: 97vw;
-    height: auto;
-    background: #bed3e0;
-    padding: 3% 10% 10% 10%;
+
+.secondPage {
+
     display: flex;
-    gap: 30%;
-    align-items: center;
-    
+    flex-direction: row;
+
 }
-.secondPage h1{
+
+.secondPage .secondPage h1 {
     font-size: 3rem;
 }
-.secondPage p{
+
+.secondPage p {
     width: auto;
     padding-top: 2.2%;
     font-size: 1rem;
     line-height: 1.6;
     font-weight: 500;
 }
-.secondPage img{
+
+.secondPage img {
     width: 300px;
 }
-.thirdPage{
-     max-width: 97vw;
-    height: auto;
-    background: #bed3e0;
-    padding: 3% 10% 10% 10%;
-    display: flex;
-    flex-direction: column;
-    gap: 30%;
-    
-}
-.thirdPage h1{
+
+.thirdPage h1 {
     font-size: 3rem;
 }
-.project{
+
+.project {
     padding: 5%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-.pro1{
+
+.pro1 {
     display: flex;
-   border-bottom: 2px solid black;
-   border-radius: 2%;
+    border-bottom: 2px solid black;
+    border-radius: 2%;
 }
 
-.pro1 img{
+.pro1 img {
 
     width: 15%;
     height: auto;
     padding: 4% 15% 8% 0%;
 }
 
-.content h2{
+.content h2 {
     font-weight: 320;
     font-size: 2.6rem;
     padding: 2.5%;
 }
-.content p{
+
+.content p {
     line-height: 1.8;
     padding: 2.5%;
 }
+
 .link a {
     padding: 2.5%;
 }
-.fa-github{
+
+.fa-github {
     padding-left: 2.5%;
-    
+
     color: black;
+}
+
+.aboutme {
+    padding: 5%;
+}
+
+#about1 {
+    padding: 0% 0% 2% 0%;
+    font-size: 1.4rem;
+}
+
+#scrl {
+    position: relative;
+    padding: 2%;
+}
+
+.hr3 {
+    width: 2.5px;
+    margin-bottom: 5%;
+    margin-left: 3.5%;
 }
