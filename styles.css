@@ -258,6 +258,10 @@ main {
     font-size: 3rem;
 }
 
+.forthpage h1 {
+    font-size: 3rem;
+}
+
 .project {
     padding: 5%;
     display: flex;
@@ -307,31 +311,56 @@ main {
 #about1 {
     padding: 0% 0% 2% 0%;
     font-size: 1.4rem;
-    line-height:1.5;
+    line-height: 1.5;
 }
 
 #scrl {
-    opacity:.5;
+    opacity: .5;
     padding: 2%;
 }
-  #scrl span {
+
+#scrl span {
     display: inline-block;
-    animation: wave 1.2s ease-in-out infinite ;
-    animation-delay:2s;
-  }
+    animation: wave 1.2s ease-in-out infinite;
+    animation-delay: 2s;
+}
 
-  @keyframes wave {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-10px); }
-  }
+@keyframes wave {
 
-  /* Delay each span slightly for wave effect */
-  #scrl span:nth-child(1) { animation-delay: 0s; }
-  #scrl span:nth-child(2) { animation-delay: 0.2s; }
-  #scrl span:nth-child(3) { animation-delay: 0.4s; }
-  #scrl span:nth-child(4) { animation-delay: 0.6s; }
-  #scrl span:nth-child(5) { animation-delay: 0.8s; }
-  #scrl span:nth-child(6) { animation-delay: 0.9s; }
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Delay each span slightly for wave effect */
+#scrl span:nth-child(1) {
+    animation-delay: 0s;
+}
+
+#scrl span:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+#scrl span:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+#scrl span:nth-child(4) {
+    animation-delay: 0.6s;
+}
+
+#scrl span:nth-child(5) {
+    animation-delay: 0.8s;
+}
+
+#scrl span:nth-child(6) {
+    animation-delay: 0.9s;
+}
 
 .hr3 {
     width: 2.5px;
@@ -339,13 +368,20 @@ main {
     margin-left: 3.5%;
 }
 
-.extra{
-    word-wrap:normal ;
+.extra {
+    word-wrap: normal;
     font-size: 1.2rem;
-    line-height:1.5;
+    line-height: 1.5;
     padding: 2% 0% 2% 0%;
 }
-.aboutH{
-     font-family: "Caveat", cursive;
+
+.aboutH {
+    font-family: "Caveat", cursive;
     font-size: 2rem;
+}
+
+.fifthpage {
+    width: auto;
+
+
 }
