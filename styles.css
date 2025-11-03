@@ -3,7 +3,7 @@
     margin: 0;
     list-style: none;
     font-family: "Bitter", sans-serif;
-    cursor: auto;
+    cursor:default;
 }
 
 .wrap {
@@ -34,6 +34,7 @@ Header {
     box-sizing: border-box;
     display: flex;
     justify-content:space-between;
+    
     
 }
 
@@ -74,9 +75,13 @@ Header :nth-child(2) li {
     font-size:small;
     margin-top: 3px;
 }
-
+#anim li a{
+    
+    text-decoration: none;
+      color: #000;
+}
 Header ul li {
-    font-size: small;
+    font-size: large;
     letter-spacing: 4px;
     padding-top: 13px;
 }
@@ -261,7 +266,10 @@ main {
 .thirdPage h1 {
     font-size: 3rem;
 }
+.forthpage{
+    padding-bottom: 2% ;
 
+}
 .forthpage h1 {
     font-size: 3rem;
 }
@@ -311,6 +319,11 @@ main {
     color: black;
 }
 
+.fa-linkedin {
+    padding: 3%;
+     width: 10%;
+    color: black;
+}
 .aboutme {
     padding: 5%;
 }
@@ -389,6 +402,138 @@ main {
 
 .fifthpage {
     width: auto;
-
-
 }
+
+.fifthpage h1{
+    font-size: 3rem;
+}
+
+.material{
+    padding: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.links ul{
+    display: flex;
+    gap: 2%;
+}
+
+/* === CONTACT FORM === */
+.forms {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#contact-form {
+  width: 100%;
+  max-width: 450px;
+  background: transparent;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 15px 0;
+}
+
+#contact-form h2 {
+  text-align: center;
+  font-size: 1.6rem;
+  letter-spacing: 2px;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+#contact-form input,
+#contact-form textarea {
+  border: none;
+  border-bottom: 1.5px solid black;
+  background: transparent;
+  padding: 12px 5px;
+  font-size: 1rem;
+  font-family: "Bitter", sans-serif;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus {
+  border-color: #286f6c;
+}
+
+#contact-form textarea {
+  resize: none;
+}
+
+#contact-form button {
+  margin-top: 15px;
+  align-self: flex-end;
+  width: 120px;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1.5px solid black;
+  background: transparent;
+  color: black;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+#contact-form button:hover {
+  background: #286f6c;
+  color: white;
+  transform: translateY(-2px);
+}
+
+#form-status {
+  margin-top: 15px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #000;
+  opacity: 0.8;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .avaani img {
+    width: 70%;
+    margin: 0;
+  }
+
+  .secondPage {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pro1 {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .content p {
+    font-size: 1rem;
+  }
+}
+
+
+
+
+
+
+
+
+
