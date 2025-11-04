@@ -1,4 +1,4 @@
-* {
+ * {
     padding: 0;
     margin: 0;
     list-style: none;
@@ -357,7 +357,7 @@ main {
     }
 }
 
-/* Delay each span slightly for wave effect */
+
 #scrl span:nth-child(1) {
     animation-delay: 0s;
 }
@@ -402,6 +402,7 @@ main {
 
 .fifthpage {
     width: auto;
+    padding-bottom: 0%;
 }
 
 .fifthpage h1{
@@ -419,7 +420,7 @@ main {
     gap: 2%;
 }
 
-/* === CONTACT FORM === */
+
 .forms {
   display: flex;
   justify-content: center;
@@ -498,42 +499,200 @@ main {
   opacity: 0.8;
 }
 
-
-
-
-
-@media (max-width: 768px) {
-  main {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .avaani img {
-    width: 70%;
-    margin: 0;
-  }
-
-  .secondPage {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .pro1 {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .content p {
-    font-size: 1rem;
-  }
+.mnnu ul li a{
+    text-decoration: none;
+    color: black;
+    line-height: 1.5;
+    font-size: larger;
+}
+.mnnu ul li:hover{
+    text-decoration: underline;
+    font-weight: bold; 
 }
 
 
+@media (max-width: 768px) {
+    
+    .wrap {
+        border: 7px solid white; 
+    }
+
+    Header {
+        padding: 3% 5%; 
+        border-top: 7px solid white;
+        background: #bed3e0;
+    }
+
+    main {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .intro {
+        padding: 20% 5% 5% 5%; 
+    }
+
+    .intro h1 {
+        font-size: 2.5rem;
+        line-height: 1.2;
+    }
+
+    .intro p {
+        font-size: 1rem; 
+        padding-left: 0;
+        margin-top: 10px;
+    }
+
+    .avaani {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 5%;
+    }
+
+    .avaani img {
+        width: 60%; 
+        margin: 0;
+        padding: 5%; 
+    }
+
+    .line {
+        display: none; 
+    }
+
+    .common {
+        padding: 10% 5%; 
+        gap: 5%;
+    }
+
+    .secondPage {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .secondPage img {
+        width: 200px; 
+        margin-bottom: 20px;
+    }
+
+    .secondPage h1,
+    .thirdPage h1,
+    .forthpage h1,
+    .fifthpage h1 {
+        font-size: 2rem; 
+        margin-bottom: 20px;
+    }
+
+    .secondPage p {
+        font-size: 1rem;
+        padding-top: 0;
+        text-align: left;
+    }
+
+    .project {
+        padding: 0;
+    }
+
+    .pro1 {
+        flex-direction: column; 
+        text-align: left;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+    }
+
+    .pro1 img {
+        width: 50%; 
+        height: auto;
+        padding: 0;
+        margin: 0 auto 15px auto; 
+    }
+
+    .content h2 {
+        font-size: 1.6rem; 
+        padding-left: 0;
+    }
+
+    .content p {
+        font-size: 0.95rem; 
+        line-height: 1.6;
+        padding: 10px 0;
+    }
+
+    .links {
+        padding: 10px 0;
+    }
+    
+    .fa-github {
+        padding-left: 0;
+        margin-right: 15px;
+    }
+    
+    .aboutme {
+        padding: 0;
+    }
+
+    #about1 {
+        font-size: 1.1rem;
+    }
+
+    .extra {
+        font-size: 1rem;
+    }
+
+    .aboutH {
+        font-size: 1.6rem;
+    }
+
+    .hr3 {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .material {
+        flex-direction: column; 
+        align-items: flex-start;
+        padding: 0;
+        gap: 30px;
+    }
+
+    .links ul {
+        gap: 20px;
+        padding-left: 0;
+    }
+    
+    .mnnu {
+        width: 100%;
+        text-align: left;
+    }
+
+    .mnnu ul {
+        display: flex;
+        flex-direction: column; 
+    }
+    
+    .forms {
+        width: 100%; 
+        max-width: none;
+        justify-content: flex-start;
+    }
+
+    #contact-form {
+        max-width: 100%;
+        padding: 15px 5px;
+    }
+
+    #contact-form button {
+        align-self: center; 
+    }
+}
 
 
-
-
-
+@media (max-width: 480px) {
+    .intro h1 {
+        font-size: 2rem;
+    }
+}
 
 
